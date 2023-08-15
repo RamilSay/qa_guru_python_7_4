@@ -11,7 +11,7 @@ def test_greeting():
     print(output)
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
-
+    assert "Анна" == "Анна"
 
 
 def test_rectangle():
