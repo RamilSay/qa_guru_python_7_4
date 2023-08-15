@@ -1,4 +1,4 @@
-
+import math
 
 def test_greeting():
     """
@@ -35,13 +35,14 @@ def test_circle():
     Напишите программу, которая берет радиус круга и выводит на экран его длину и площадь.
     Используйте константу PI
     """
+
     r = 23
     # TODO сосчитайте площадь
-    area = 0
+    area = math.pi * r * r
     assert area == 1661.9025137490005
 
     # TODO сосчитайте длину окружности
-    length = 0
+    length = 2 * math.pi * r
     assert length == 144.51326206513048
 
 
