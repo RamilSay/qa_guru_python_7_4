@@ -11,7 +11,6 @@ def test_greeting():
     print(output)
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
-    assert "Анна" == "Анна"
 
 
 def test_rectangle():
@@ -23,11 +22,11 @@ def test_rectangle():
     b = 20
 
     # TODO сосчитайте периметр
-    perimeter = 0
+    perimeter = (a + b) * 2
     assert perimeter == 60
 
     # TODO сосчитайте площадь
-    area = 0
+    area = a * b
     assert area == 200
 
 
