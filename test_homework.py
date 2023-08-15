@@ -1,4 +1,4 @@
-import math
+import math, random
 
 def test_greeting():
     """
@@ -38,7 +38,7 @@ def test_circle():
 
     r = 23
     # TODO сосчитайте площадь
-    area = math.pi * r * r
+    area = math.pi * pow(r, 2)
     assert area == 1661.9025137490005
 
     # TODO сосчитайте длину окружности
@@ -52,6 +52,7 @@ def test_random_list():
     """
 
     # TODO создайте список
+    random.randint(1, 100)
     l = []
     assert len(l) == 10
     assert l[0] < l[-1]
